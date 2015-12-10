@@ -85,7 +85,7 @@ if (API_KEY === 'yes') {
         $db = $dbc->getConnection();
         $db->exec("SET CHARACTER SET utf8");
         try {
-            $sql = "SELECT id FROM `gprs_depots` WHERE `depot`= ? AND `key`= ?";
+            $sql = "SELECT id FROM `users` WHERE `key`= ? AND `pass`= ?";
             $stmt = $db->prepare($sql);
             $stmt->execute(array($key, $value));
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
