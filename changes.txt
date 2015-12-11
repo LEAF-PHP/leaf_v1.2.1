@@ -1,0 +1,11 @@
+Dec 10, 2015:
+Only GET and POST requests handled by REQUEST parameter:
+	LEAF only focuses on two HTTP requests i.e. GET and POST.
+	All other requests are filtered.
+Dec 1, 2015:
+Multi Key-Value pair authentication:	
+	Unlike previous version in this version REQUEST can be authenticated using different different key-value pair.
+	These key-value pairs can be plainly stored in auth.php file or can be fetched from database.
+Nov 29, 2015:
+Multiple database selection:
+	User can select multiple database from dbConfig.php by just passing different db_id.
